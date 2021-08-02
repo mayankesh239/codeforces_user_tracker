@@ -13,6 +13,7 @@ The techs used in this are:
 * JavaScript
 * ReactJS
 * React router
+* Codeforces API
 
 <!-- USAGE EXAMPLES -->
 ## Usage
