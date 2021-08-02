@@ -3,7 +3,7 @@
 ## About The Project
 
 About this App
-This is an app designed to track the informations of the users on Codeforces. This will give you the details of performmance of a user. You just need to type his handle and press Go.
+This is an app designed to track the informations of the users on Codeforces. This will give you the details of performmance of a user. You just need to type thr handle and press Go.
 
 ### Built With
 
