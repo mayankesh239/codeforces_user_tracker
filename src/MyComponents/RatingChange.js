@@ -1,18 +1,15 @@
 import React from 'react'
 // import './style1.css'
-function RatingChange({ myfunction }) {
+function RatingChange() {
     return (
         <>
-            <div>
-                <section class="content1">
-                    <div class="centreDiv1">
-                        <div id="rating_change" class="container my-5">
-                        </div>
+            <section className="content1">
+                <div className="centreDiv1">
+                    <div id="rating_change" className="container my-5">
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </>
     )
 }
-
 export default RatingChange

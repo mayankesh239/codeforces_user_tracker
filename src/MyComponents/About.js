@@ -10,7 +10,9 @@ function About() {
         fontFamily: " monospace",
         fontSize: "30px",
         paddingTop: "100px",
-        paddingLeft: "80px"
+        paddingLeft: "80px",
+        color: "white",
+        backgroundColor: "rgba(0, 0, 0, 0.74)"
     }
     return (
         <>

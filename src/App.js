@@ -1,9 +1,7 @@
-// import logo from './logo.svg';
 import './App.css';
 import './MyComponents/style1.css';
 import Header from "./MyComponents/Header";
 import About from "./MyComponents/About";
-// import Home from "./MyComponents/Home";
 import Layout from "./MyComponents/Layout";
 import Footer from "./MyComponents/Footer";
 import Rating_Change from "./MyComponents/RatingChange";
@@ -17,7 +15,7 @@ function App() {
   let a, val, url, pic, html, url_rating_chanege, html_rating_change;
   function myfunction() {
     a = document.getElementById('nameid').value;
-    if (a == "") {
+    if (a === "") {
       alert("Please enter the user handle");
     }
     else {
@@ -33,30 +31,26 @@ function App() {
     fetch(val).then((response) => {
       return response.json();
     }).then((data) => {
-      // console.log(data.result[0].rating);
       displayData(data);
     })
     fetch(url_rating_chanege).then((response) => {
       return response.json();
     }).then((data_rating_change) => {
-      console.log(data_rating_change.result[data_rating_change.result.length - 1].oldRating);
-      // console.log(url_rating_chanege)
-      // displayData(data);
       RatingChange(data_rating_change)
     })
   }
   function displayData(data) {
     pic = data.result[0].titlePhoto;
-    // console.log(pic)
-    html = "<img src=\"" + pic + '\"width="300" height="169"></img><br>'
+    html = "<img src=\"" + pic + '"width="70%" height="50%" id="user_pic"></img><br>'
+      + "<div class=\"user_info_fetch\">"
       + "Rating: " + data.result[0].rating + "<br>"
       + "Friends: " + data.result[0].friendOfCount + "<br>"
       + "Handle: " + data.result[0].handle + "<br>"
-      + "Nmae: " + data.result[0].firstName + " " + data.result[0].lastName + "<br>"
+      + "Name: " + data.result[0].firstName + " " + data.result[0].lastName + "<br>"
       + "Contribution: " + data.result[0].contribution + "<br>"
       + "Rank: " + data.result[0].rank + "<br>"
       + "Max Rating: " + data.result[0].maxRating + "<br>"
-      + "Max Rank: " + data.result[0].maxRank + "<br>"
+      + "Max Rank: " + data.result[0].maxRank + "<br></div>"
     document.getElementById("info").innerHTML = html;
   }
 
