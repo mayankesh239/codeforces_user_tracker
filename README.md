@@ -13,7 +13,7 @@ The techs used in this are:
 * JavaScript
 * ReactJS
 * React router
-* 
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -39,7 +39,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Mayankesh Jha - [Linkdedin](https://www.linkedin.com/in/mayankesh-jha-15446b206/)
 
-Project Link: [https://github.com/mayankesh239/codeforces_user_tracker](https://github.com/mayankesh239/codeforces_user_tracker)
+Project Link:  [https://github.com/mayankesh239/codeforces_user_tracker](https://github.com/mayankesh239/codeforces_user_tracker)
 
 
 
